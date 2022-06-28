@@ -1,0 +1,24 @@
+input{
+    margin: 200px;
+    border: none;
+    
+}
+input[type="button"]:hover{
+    background-color: darkgrey;
+    border-bottom: 2px solid black;
+}
+input[type="button"]{
+    height: 45px;
+    width: 100px;
+    border:none;
+    font-variant: small-caps;
+    position: relative;
+    left: 305px;
+    top: 40px;
+    cursor: pointer;
+
+}
+
+input:hover #picture{
+    border: 10px solid red;
+}
