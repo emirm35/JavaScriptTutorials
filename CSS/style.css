@@ -6,6 +6,7 @@ input{
 input[type="button"]:hover{
     background-color: darkgrey;
     border-bottom: 2px solid black;
+    
 }
 input[type="button"]{
     height: 45px;
@@ -21,4 +22,7 @@ input[type="button"]{
 
 input:hover #picture{
     border: 10px solid red;
+}
+body{
+    background-color: gainsboro;
 }
