@@ -8,18 +8,18 @@
    
 </head>
 <body>
-    <p>Selam</p>
-    <p id="result" class="test">javascript htmlden büyüktür</p>
-    <input type="button" value="bas bakalım" onClick="Process();">
-    <p id="sonuc" class="test">JavaScript öğreniyoruz</p>
-    <input type="button" value="bas" onClick="Process2();">
+<!--  tıklanıldığında lamba açıp kapanıyor  -->
+    <input type="button" value="Open Light" onclick="openLight();">
+    <img src="/lightoff.png" alt="light" id="picture" width="100px" height="100px">
+    <input type="button" value="Close Light" onclick="closeLight();">
+    <img src="/lighton.png" alt="light" id="picture2" width="100px" height="100px">
 
 <script>
-function Process(){
-    document.getElementById('result').innerHTML='Javascript içeriğe ulaştı ve yazıyı değiştirdi';
+function openLight(){
+    document.getElementById('picture').src="lighton.png";
 }
-function Process2(){
-    document.getElementById('sonuc').innerHTML='Değişiyo basıyooo';
+function closeLight(){
+    document.getElementById('picture2').src="lightoff.png";
 }
 </script>
 </body>
