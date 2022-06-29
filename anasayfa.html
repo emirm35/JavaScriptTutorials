@@ -24,13 +24,17 @@
    <input type="button" value="10a kadar saydır" onclick="saydir();">
 
    <input type="button" id="boolean" value="boolean" onclick="boolean();">
-
+     <div id="js"></div>
 <script>
-    var obj;
-    obj={firstName:"murat",lastname:"murat"};
-    alert(typeof obj);
+    var langs=["JavaScript","Angular JS","React JS","Vue JS"];
+    var i;
+
+        for(i = 0; i<=langs.length; i++){
+            document.getElementById('js').innerHTML+=langs[i] + "<br>";
+        }
+       
+ 
+
 </script>
-
-
 </body>
-</html
+</html>
