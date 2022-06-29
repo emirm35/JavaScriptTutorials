@@ -24,3 +24,14 @@ function boolean(){
 
    document.getElementById('boolean').innerHTML= (x==y) + "<br>" + (x==z);
 }
+function fonksiyon(x,y,c){
+c+=x+y;
+document.getElementById('fonksiyon').innerHTML=c;
+
+
+
+
+
+
+
+}

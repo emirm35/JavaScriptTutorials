@@ -25,14 +25,20 @@
 
    <input type="button" id="boolean" value="boolean" onclick="boolean();">
      <div id="js"></div>
-<script>
-    var langs=["JavaScript","Angular JS","React JS","Vue JS"];
-    var i;
 
-        for(i = 0; i<=langs.length; i++){
-            document.getElementById('js').innerHTML+=langs[i] + "<br>";
-        }
-       
+
+
+    <input type="button" value="function" id="function" onclick="fonksiyon(4,4,1);">
+    <div id="fonksiyon"></div>
+
+
+<script>
+   var person={firstName:"Emir",lastName:"Murat"};
+   document.getElementById('js').innerHTML=person.firstName + " " + person.lastName + " Bu nesnenin türü: " + typeof person;
+   
+   
+
+
  
 
 </script>
