@@ -18,3 +18,9 @@ function saydir(){
 
 
 }
+function boolean(){
+   var x,y,z;
+   x=7,y=7,z=70;
+
+   document.getElementById('boolean').innerHTML= (x==y) + "<br>" + (x==z);
+}
