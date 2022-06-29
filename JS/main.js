@@ -8,5 +8,5 @@ function changeCss(){
    
    ortalama = ((vize * 20) / 100) + ((final * 80) / 100);
 
-   document.getElementById('sayi').innerHTML=ortalama;
+   document.getElementById('sayi').innerHTML="Öğrencinin ortalaması= " + ortalama;
 }
