@@ -10,3 +10,11 @@ function changeCss(){
 
    document.getElementById('sayi').innerHTML="Öğrencinin ortalaması= " + ortalama;
 }
+function saydir(){
+   var i=0;
+   for (let i=0; i<=40; i++){
+      document.getElementById('saydir').innerHTML=i;
+   }
+
+
+}
