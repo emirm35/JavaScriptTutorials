@@ -17,37 +17,20 @@
 
 
 <script>
-function sum(sum1,sum2){
-return sum1+sum2;
-}
-function sub(sub1,sub2){
-return sub1-sub2;
-}
-function multi(multi1,multi2){
-    return multi1*multi2;
-}
-function fraction(fraction1,fraction2){
-    return fraction1/fraction2;
+var car={name:"nissan",model:"skyline",color:"black",
+start:function(){
+  return  this.name + " " + this.model + " çalıştırıldı "
+},
+drive:function(){
+     return this.name + " " + this.model + " sürülmeye başlandı "
 
+},
+stop:function(){
+    return this.name + " " + this.model + " durduruldu "
 }
-function calculate(pr1,pr2){
-    return sum(pr1,pr2)*sum(pr1,pr2);
-}
+};
 
-
-
-function printScreen(par){
-    document.getElementById('fonksiyon').innerHTML=par;
-}
-
-for(var i=1; i<10;i++){
-    for(var x=1; x<10; x++){
-        printScreen(calculate(i,x));
-    }
-    
-}
-
-
+document.getElementById('fonksiyon').innerHTML=car.start() + "<br>" + car.drive() + "<br>" + car.stop();
 
 
 
