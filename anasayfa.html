@@ -11,12 +11,11 @@
 <body>
 
    
-<div id="fonksiyon"></div>
+<input type="text" placeholder="sadece sayı giriniz" id="number">
+<button type="button" onclick="learn();">Click</button>
 
-<input type="checkbox" value="" onchange="keyDown();">saka
 
-
-<div id="result" ></div>
+<div id="result"></div>
 
 
 
@@ -28,12 +27,14 @@
 
 
 /* how to split strings */
-    learn();
+ 
 function learn(){
-    var text="Javascript,Angular,React,Vue,JQuery";
-var arrayList=text.split(",");
-document.getElementById('result').innerHTML=arrayList[1];
-}
+    var x=document.getElementById('number').value;
+   if(isNaN(x)){
+   alert("Lütfen sayı giriniz.");
+   }else
+   document.getElementById('result').innerHTML="Tebrikler girdiğiniz sayı= " + x;
+} 
 
 
 
