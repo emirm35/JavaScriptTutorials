@@ -10,25 +10,32 @@
 </head>
 <body>
 
-
    
 <div id="fonksiyon"></div>
+
+<input type="checkbox" value="" onchange="keyDown();">saka
+
+
+<div id="result" ></div>
+
+
+
+
 
 
 
 <script>
 
 
+/* how to split strings */
+    learn();
+function learn(){
+    var text="Javascript,Angular,React,Vue,JQuery";
+var arrayList=text.split(",");
+document.getElementById('result').innerHTML=arrayList[1];
+}
 
 
-
- /* eğer değişkenin başına var koymazsak. fonksiyonun içindeki değişken global olarak tanımlanır.*/
-Scope();
- function Scope(){
-var name="React JS";
-
- }
- document.getElementById('fonksiyon').innerHTML=name;
 
 
 </script>
