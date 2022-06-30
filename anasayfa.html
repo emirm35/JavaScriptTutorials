@@ -17,22 +17,18 @@
 
 
 <script>
-var car={name:"nissan",model:"skyline",color:"black",
-start:function(){
-  return  this.name + " " + this.model + " çalıştırıldı "
-},
-drive:function(){
-     return this.name + " " + this.model + " sürülmeye başlandı "
-
-},
-stop:function(){
-    return this.name + " " + this.model + " durduruldu "
-}
-};
-
-document.getElementById('fonksiyon').innerHTML=car.start() + "<br>" + car.drive() + "<br>" + car.stop();
 
 
+
+
+
+ /* eğer değişkenin başına var koymazsak. fonksiyonun içindeki değişken global olarak tanımlanır.*/
+Scope();
+ function Scope(){
+var name="React JS";
+
+ }
+ document.getElementById('fonksiyon').innerHTML=name;
 
 
 </script>
