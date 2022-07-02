@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
     <script src="/JS/main.js"></script>
-</head>
-<body>
-
-   
-<input type="text" placeholder="sadece sayı giriniz" id="number">
-<button type="button" onclick="learn();">Click</button>
+  </head>
+  <body>
+  
 
 
-<div id="result"></div>
+    
+    
+    
+    <div id="result"></div>
+    <div class="big-item"></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
 
 
 
 
 
 
-
-<script>
-
-
-/* how to split strings */
- 
-function learn(){
-    var x=document.getElementById('number').value;
-   if(isNaN(x)){
-   alert("Lütfen sayı giriniz.");
-   }else
-   document.getElementById('result').innerHTML="Tebrikler girdiğiniz sayı= " + x;
-} 
+        learn();
+      function learn(){
+          /* Random function in Javascript */
+        document.getElementById('result').innerHTML=Math.floor(Math.random()*10);
+      
 
 
-
-
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>
