@@ -9,51 +9,25 @@
     <script src="/JS/main.js"></script>
   </head>
   <body>
+
+
+
+    <div id="result"></div>
   
 
 
     
     
-    
-    <div id="result"></div>
-    <div class="big-item"></div>
-    
-    <button type="button" onclick="learn();">Tıkla</button>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
+
+
     
     <script>
-    
+      var d=new Date();
+        document.getElementById('result').innerHTML=d.getHours() + ":" +d.getMinutes() + ":" + d.getSeconds();
 
 
-     function getRandom(min,max){
-      return Math.floor(Math.random()*max)+min;
-     }
-
-
-
-
-      function learn(){
-          
-        document.getElementById('result').innerHTML=getRandom(1,10);
-      
-
-
-      }
+        
     </script>
   </body>
 </html>
