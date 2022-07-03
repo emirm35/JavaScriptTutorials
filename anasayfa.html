@@ -24,8 +24,10 @@
     
     <script>
       var d=new Date();
-      var days=["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"]
-        document.getElementById('result').innerHTML=days[d.getDay()];
+      d.setDate("5");
+      d.setHours("21");
+      d.setMinutes("32");
+        document.getElementById('result').innerHTML=d;
 
         
     </script>
