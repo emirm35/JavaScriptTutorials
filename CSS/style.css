@@ -1,31 +1,14 @@
-input{
-    margin: 200px;
-    border: none;
-    
-}
-input[type="button"]:hover{
-    background-color: darkgrey;
-    border-bottom: 2px solid black;
-    
-}
-input[type="button"]{
-    height: 45px;
-    width: 100px;
-    border:none;
-    font-variant: small-caps;
-    position: relative;
-    left: 305px;
-    top: 40px;
-    cursor: pointer;
-
-}
-
-input:hover #picture{
-    border: 10px solid red;
+#result{
+    margin: 400px;
+    border: 4px gray solid;
 }
 body{
-    background-color: gainsboro;
+
+
+
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
-.big-item{
-    border: 1px solid purple;
+#result:hover{
+    border: 4px inset turquoise;
 }
