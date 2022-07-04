@@ -16,24 +16,20 @@
   
 
 
-    
+    <button type="button" onclick="Add();">Add</button>
     
   
 
 
     
     <script>
-      
+
       var langs=["php","node js","vue js"];
-      var text,i;
-      text="<ul>";
-      for(i=0; i<langs.length;i++){
-        text+="<li>"+langs[i]+"</li>";
-      }
-      text+="</ul>";
-      document.getElementById('result').innerHTML=text;
-
-
+     function Add(){
+     langs[langs.length]="bootstrap";
+      document.getElementById('result').innerHTML=langs;
+     }                
+     document.getElementById('result').innerHTML=langs;
 
     </script>
   </body>
