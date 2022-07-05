@@ -25,12 +25,23 @@
     <script>
 
       var langs=["php","node js","vue js"];
+  /*   
      function Add(){
      langs[langs.length]="bootstrap";
       document.getElementById('result').innerHTML=langs;
-     }                
-     document.getElementById('result').innerHTML=langs;
+     }       */   
+     
+     
 
+
+     document.getElementById('result').innerHTML=isArray(x);
+     function isArray(Have){
+      return Have.constructor.toString().indexOf("Array")>-1;
+     }
+
+
+
+     
     </script>
   </body>
 </html>
