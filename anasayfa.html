@@ -30,18 +30,16 @@
      langs[langs.length]="bootstrap";
       document.getElementById('result').innerHTML=langs;
      }       */   
-     
-     
+     // dizinin son eşyasını almak
+     var sonitem=langs.pop();
+    
 
-
-     document.getElementById('result').innerHTML=isArray(x);
-     function isArray(Have){
-      return Have.constructor.toString().indexOf("Array")>-1;
-     }
-
+     document.getElementById('result').innerHTML=sonitem;
 
 
      
+
+
     </script>
   </body>
 </html>
