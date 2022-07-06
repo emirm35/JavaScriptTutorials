@@ -30,10 +30,10 @@
      
 
      document.getElementById('result').innerHTML=numbers;
-
+     /* sayıları büyükten küçüğe sıralayan fonksiyon */
      function sortArray(){
        numbers.sort(function(x,y){
-        return x-y;
+        return y-x;
        });
       document.getElementById('result2').innerHTML=numbers;
      }
