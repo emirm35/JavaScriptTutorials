@@ -13,26 +13,28 @@
 
 
      <div id="result"></div>
-  
+  <div id="result2"></div>
 
 
-    <button type="button" onclick="Add();">Add</button>
+    <button type="button" onclick="sortArray();">Sırala</button>
     
   
 
 
     
     <script>
-
-      var langs1=["0","1","2","3","4","5","6","7"];
-     
-     
-      var langs=langs1.slice(1,5)
+      var langs1=["b","d","c","a","f","e","g"];
+      var langs=["a","b","c","d","e","f","g"];
   
   
 
-     document.getElementById('result').innerHTML=langs;
+     document.getElementById('result2').innerHTML=langs1;
 
+     function sortArray(){
+      langs1.sort();
+      document.getElementById('result').innerHTML=langs1;
+     }
+    
 
      
 
