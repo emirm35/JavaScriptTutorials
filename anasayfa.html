@@ -25,15 +25,17 @@
     <script>
       var langs1=["b","d","c","a","f","e","g"];
       var langs=["a","b","c","d","e","f","g"];
-  
-  
+     var numbers=[45,100,1,8,17,30,11];
 
-     document.getElementById('result2').innerHTML=langs1;
+     
+
+     document.getElementById('result').innerHTML=numbers;
 
      function sortArray(){
-      langs1.sort();
-      langs1.reverse();
-      document.getElementById('result').innerHTML=langs1;
+       numbers.sort(function(x,y){
+        return x-y;
+       });
+      document.getElementById('result2').innerHTML=numbers;
      }
     
 
