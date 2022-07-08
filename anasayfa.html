@@ -12,32 +12,47 @@
 
 
 
-     <div id="result"></div>
-  <div id="result2"></div>
+    <div id="result"></div>
+    <div id="result2"></div>
 
 
-    <button type="button" onclick="sortArray();">Sırala</button>
+    <button type="button" onclick="arraySort();">Sırala</button>
     
   
 
 
     
     <script>
-      var langs1=["b","d","c","a","f","e","g"];
-      var langs=["a","b","c","d","e","f","g"];
-     var numbers=[45,100,1,8,17,30,11];
+     let numbers=[4,3,2,1,5,6,7];
+     document.getElementById('result').innerHTML=numbers;
+
+    let myAge=20,myName="emir";
+    console.log("my name is: "+ myName +  ". I am "+ myAge + " years old") 
+
+
+
+
+     function arraySort(){
+     numbers.sort(function(x,y){
+     return x-y;
+     }); 
+     
+    
+     document.getElementById('result2').innerHTML=numbers;
+
+
+
+
+
+
+
+
+    };
+
+
 
      
 
-     document.getElementById('result').innerHTML=numbers;
-     /* sayıları büyükten küçüğe sıralayan fonksiyon */
-     function sortArray(){
-       numbers.sort(function(x,y){
-        return y-x;
-       });
-      document.getElementById('result2').innerHTML=numbers;
-     }
-    
 
      
 
