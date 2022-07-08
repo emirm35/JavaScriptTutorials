@@ -23,14 +23,13 @@
 
     
     <script>
-     let numbers=[4,3,2,1,5,6,7];
-     document.getElementById('result').innerHTML=numbers;
+     let primitiveDataTypes=["string",1,true];
+     let nonPrimitiveDataTypes=["arrays","functions","objects"]
 
-    let myAge=20,myName="emir";
-    console.log("my name is: "+ myName +  ". I am "+ myAge + " years old") 
+     document.getElementById('result').innerHTML=typeof primitiveDataTypes;
 
-
-
+     
+     
 
      function arraySort(){
      numbers.sort(function(x,y){
