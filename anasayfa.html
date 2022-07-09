@@ -13,10 +13,10 @@
 
 
     <div id="result"></div>
-    <div id="result2"></div>
 
 
-    <button type="button" onclick="arraySort();">Sırala</button>
+
+    <button type="button" onclick="sayiVarmi(txt);" id="buton1">Sırala</button>
     
   
 
@@ -24,15 +24,19 @@
     
     <script>
     
-   
 
-     function arraySort(){
-     numbers.sort(function(x,y){
-     return x-y;
-     }); }
 
-    let text="I love cats. I Love dogs. I love animals."
-    alert(text.match(/love/gi))
+    let txt="In 2019,I ran 30 days of python. Now, in 2020 i am super exited to start this challenge"
+    let sayiKontrol=/\d+/gi;
+
+
+     
+
+
+    function sayiVarmi(x){
+      alert(x.match(sayiKontrol));
+    }
+
      
 
 

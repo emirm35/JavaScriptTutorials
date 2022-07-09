@@ -10,3 +10,14 @@ body{
     left:600px;
     font-size:x-large;
 }
+#buton1{
+    padding: 20px;
+    margin-left:100px;
+    height: 50px;
+    width:150px;
+    background-color:teal;
+    
+}
+#buton1:hover{
+    background-color: darkcyan;
+}
