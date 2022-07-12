@@ -12,9 +12,8 @@
 
 
 
-    <div id="result">selam</div>
-
-
+    <div id="result">selam</div> 
+ 
 
   
     
@@ -26,9 +25,14 @@
     
 
 
-     let fullName = prompt("isminizi girin")
-     let result = document.querySelector("#result")
-     result.innerHTML = `${result.innerHTML} <small style="color: red;">${fullName}</small>`   
+     let age = prompt("yaşınızı girin")
+    if (age > 18){
+      alert("araba sürebilirsiniz")
+    }
+    else {
+      let yasfarki = 18-age;
+      alert("araba sürmek için " + yasfarki + " yaş daha büyük olmanız gerek")2
+    }
 
     </script>
   </body>
