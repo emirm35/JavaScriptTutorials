@@ -12,7 +12,7 @@
 
 
 
-    <div id="result"></div>
+    <div id="result">selam</div>
 
 
 
@@ -24,54 +24,11 @@
      
     <script>
     
-      const date = new Date();
-      let month = date.getMonth(),
-      day = date.getDate(),
-      hour = date.getHours(),
-      minute = date.getMinutes(),
-      second  = date.getSeconds(),
-      year = date.getFullYear();
-      dayNumber = date.getDay();
-     
-       let monthDizi=["ocak",
-  "şubat",
-  "mart",
-  "nisan",
-  "mayıs",
-  "haziran",
-  "temmuz",
-  "ağustos",
-  "eylül",
-  "ekim",
-  "kasım",
-  "aralık"]
-  let dayDizi = ["pazar",
-              "pazartesi",
-              "salı",
-            "çarşamba", 
-            "perşembe",
-              "cuma",
-              "cumartesi"]
- 
-    let humanDate = `${day} ${monthDizi[month]} ${year},${dayDizi[dayNumber]} ${hour}:${minute}:${second}`;
-    document.getElementById('result').innerHTML=humanDate;
-     
 
 
-   
-      
-
-
-
-
-  
-
-
-     
-
-
-     
-
+     let fullName = prompt("isminizi girin")
+     let result = document.querySelector("#result")
+     result.innerHTML = `${result.innerHTML} <small style="color: red;">${fullName}</small>`   
 
     </script>
   </body>
