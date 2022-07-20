@@ -3,21 +3,20 @@ body{
 
 
 
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    position: relative;
-    top: 450px;
-    left:600px;
-    font-size:x-large;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #010a11;
+    font-family: arial,Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color:white;
+  
+
+
 }
-#buton1{
-    padding: 20px;
-    margin-left:100px;
-    height: 50px;
-    width:150px;
-    background-color:teal;
-    
-}
-#buton1:hover{
-    background-color: darkcyan;
-}
+
+
